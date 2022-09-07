@@ -1,10 +1,10 @@
 const body = document.querySelector("body")
-const first = document.querySelector(".first")
-const second = document.querySelector(".second")
+const firstInput = document.querySelector(".first")
+const secondInput = document.querySelector(".second")
 
 function gradient() {
-    body.style.background = `linear-gradient(to right, ${first.value}, ${second.value})`
+    body.style.background = `linear-gradient(to right, ${firstInput.value}, ${secondInput.value})`
 }
 
-first.addEventListener("input", gradient);
-second.addEventListener("input", gradient);
+firstInput.addEventListener("input", gradient);
+secondInput.addEventListener("input", gradient);
